@@ -285,6 +285,61 @@ export default function DashboardMockup() {
         </div>
 
         {/* Tiles */}
+        {/* "Pick up where you left off" — appears only on AFTER state.
+            Uses the grid-rows 0fr→1fr trick for a smooth height collapse. */}
+        <div
+          className={`grid overflow-hidden transition-all duration-700 ${
+            isAfter ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+          }`}
+        >
+          <div className="overflow-hidden">
+            <div className="border-t border-line bg-bone px-4 py-4 sm:px-5 sm:py-5">
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+                <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-terracotta-deep sm:text-[11px]">
+                  Pick up where you left off
+                </div>
+                <div className="flex flex-1 flex-wrap gap-3">
+                  <div className="flex min-w-[220px] flex-1 items-center gap-3 rounded-md border border-line bg-bone-warm p-2.5">
+                    <img
+                      src={afterTiles[0].image}
+                      alt={afterTiles[0].alt}
+                      loading="lazy"
+                      className="h-14 w-14 shrink-0 rounded object-cover"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <div className="truncate text-[13px] font-medium text-charcoal">
+                        {afterTiles[0].title}
+                      </div>
+                      <div className="text-[11px] text-charcoal-muted">
+                        In your cart · {afterTiles[0].price}
+                      </div>
+                    </div>
+                    <span className="shrink-0 rounded-full bg-charcoal px-3 py-1 text-[11px] font-medium text-bone-warm">
+                      Resume →
+                    </span>
+                  </div>
+                  <div className="flex min-w-[220px] flex-1 items-center gap-3 rounded-md border border-line bg-bone-warm p-2.5">
+                    <img
+                      src={afterTiles[1].image}
+                      alt={afterTiles[1].alt}
+                      loading="lazy"
+                      className="h-14 w-14 shrink-0 rounded object-cover"
+                    />
+                    <div className="min-w-0 flex-1">
+                      <div className="truncate text-[13px] font-medium text-charcoal">
+                        {afterTiles[1].title}
+                      </div>
+                      <div className="text-[11px] text-charcoal-muted">
+                        Saved 3 days ago · {afterTiles[1].price}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-4 gap-3 p-4 sm:gap-4 sm:p-5">
           {beforeTiles.map((before, i) => (
             <Tile
