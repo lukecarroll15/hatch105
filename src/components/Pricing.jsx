@@ -48,7 +48,7 @@ export default function Pricing() {
           <div className="text-center">
             <div className="flex items-baseline justify-center gap-1">
               <span className="text-7xl font-semibold tracking-[-0.04em] text-charcoal sm:text-8xl">
-                $89
+                $99
               </span>
             </div>
             <div className="mt-2 text-sm text-charcoal-muted">per month</div>

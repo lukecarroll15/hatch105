@@ -4,24 +4,28 @@ const beforeTiles = [
   {
     title: "Linen Sofa",
     alt: "Neutral linen sofa",
+    price: "$1,840",
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80&auto=format&fit=crop",
   },
   {
     title: "Floor Lamp",
     alt: "Minimal floor lamp",
+    price: "$295",
     image:
       "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=400&q=80&auto=format&fit=crop",
   },
   {
     title: "Wool Rug",
     alt: "Wool area rug",
+    price: "$620",
     image:
       "https://images.unsplash.com/photo-1600166898405-da9535204843?w=400&q=80&auto=format&fit=crop",
   },
   {
     title: "Stone Vase",
     alt: "Stone vase on table",
+    price: "$145",
     image:
       "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=400&q=80&auto=format&fit=crop",
   },
@@ -31,26 +35,30 @@ const afterTiles = [
   {
     title: "Sahara Armchair",
     alt: "Rattan armchair",
+    price: "$1,290",
     image:
       "https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=400&q=80&auto=format&fit=crop",
   },
   {
     title: "Woven Pendant",
     alt: "Woven rattan pendant",
+    price: "$385",
     image:
       "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&q=80&auto=format&fit=crop",
   },
   {
     title: "Jute Rug",
     alt: "Natural jute rug",
+    price: "$510",
     image:
       "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=400&q=80&auto=format&fit=crop",
   },
   {
     title: "Linen Throw",
     alt: "Linen throw blanket",
+    price: "$135",
     image:
-      "https://images.unsplash.com/photo-1522444690501-fbb4c54f8a37?w=400&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=400&q=80&auto=format&fit=crop",
   },
 ];
 
@@ -130,7 +138,9 @@ function Tile({ before, after, swapped }) {
         <div className="truncate text-[13px] font-medium text-charcoal">
           {swapped ? after.title : before.title}
         </div>
-        <div className="text-[11px] text-charcoal-muted">From $—</div>
+        <div className="text-[11px] text-charcoal-muted">
+          {swapped ? after.price : before.price}
+        </div>
       </div>
     </div>
   );
