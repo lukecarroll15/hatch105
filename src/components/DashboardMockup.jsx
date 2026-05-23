@@ -67,19 +67,19 @@ const story = [
     n: 1,
     stage: "Observed",
     when: "Day 1",
-    body: "Sarah landed via a Pinterest pin for a boho living room. Mirror dropped a first-party cookie and logged what held her attention — scroll-pause, filters used, items added then dropped.",
+    body: "Inbound from a Pinterest pin. First-party cookie set; behaviour logged.",
   },
   {
     n: 2,
     stage: "Learned",
     when: "Days 3–7",
-    body: "Three sessions in, the pattern was clear: dwell time spiked on rattan and natural-materials products, she filtered warm neutrals every visit, she saved a Woven Pendant but didn't buy. A style fingerprint built from behaviour — no quiz, no survey.",
+    body: "Pattern across 3 sessions: rattan, warm neutrals, an abandoned Sahara armchair.",
   },
   {
     n: 3,
     stage: "Rebuilt",
-    when: "Day 10 — today",
-    body: "On her 3rd return, Mirror rebuilt the storefront server-side before first paint. The hero became a Welcome Back anchored to her cart. The product grid re-ranked to lead with the materials she actually lingers on.",
+    when: "Day 10",
+    body: "Storefront re-rendered server-side. Hero pulled from her cart, grid re-ranked.",
   },
 ];
 
