@@ -242,33 +242,42 @@ export default function DashboardMockup() {
               isAfter ? "opacity-100" : "opacity-0"
             }`}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-charcoal/10 to-charcoal/65" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-charcoal/25 to-charcoal/80" />
 
           {/* Hero copy — cross-fades with image */}
-          <div className="absolute inset-x-0 bottom-6 px-6 sm:bottom-8 sm:px-10">
-            <div className="relative h-[68px] sm:h-[84px]">
+          <div className="absolute inset-x-0 bottom-7 px-6 sm:bottom-10 sm:px-10">
+            <div className="relative h-[96px] sm:h-[128px]">
+              {/* BEFORE — generic editorial hero */}
               <div
-                className={`absolute inset-0 transition-opacity duration-700 ${
+                className={`absolute inset-0 max-w-[560px] transition-opacity duration-700 ${
                   isAfter ? "opacity-0" : "opacity-100"
                 }`}
               >
-                <div className="text-2xl font-semibold leading-tight tracking-[-0.02em] text-white sm:text-3xl">
-                  New arrivals
+                <div className="text-[10px] font-medium uppercase tracking-[0.22em] text-white/70 sm:text-[11px]">
+                  Autumn collection
                 </div>
-                <div className="mt-2 text-sm text-white/85 sm:text-base">
-                  Shop the season's latest pieces
+                <div className="mt-2 text-2xl font-semibold leading-[1.1] tracking-[-0.02em] text-white sm:mt-3 sm:text-4xl">
+                  Pieces that hold a room together.
+                </div>
+                <div className="mt-2 text-[12px] text-white/80 sm:mt-3 sm:text-sm">
+                  Linen, oak, stone — made to live with.
                 </div>
               </div>
+              {/* AFTER — personalised, anchored to her signals */}
               <div
-                className={`absolute inset-0 transition-opacity duration-700 ${
+                className={`absolute inset-0 max-w-[560px] transition-opacity duration-700 ${
                   isAfter ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="text-2xl font-semibold leading-tight tracking-[-0.02em] text-white sm:text-3xl">
-                  Welcome back, Sarah.
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-bone-warm/95 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-terracotta-deep sm:text-[11px]">
+                  <span className="h-1.5 w-1.5 rounded-full bg-terracotta-deep" aria-hidden="true" />
+                  Your 3rd visit
                 </div>
-                <div className="mt-2 text-sm text-white/85 sm:text-base">
-                  Still thinking about the Sahara armchair?
+                <div className="mt-3 text-2xl font-semibold leading-[1.1] tracking-[-0.02em] text-white sm:mt-3 sm:text-4xl">
+                  Sahara armchair, still in your cart.
+                </div>
+                <div className="mt-2 text-[12px] text-white/85 sm:mt-3 sm:text-sm">
+                  Paired with the rattan + natural materials you've been saving.
                 </div>
               </div>
             </div>
