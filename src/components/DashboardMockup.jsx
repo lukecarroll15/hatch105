@@ -67,19 +67,19 @@ const story = [
     n: 1,
     stage: "Observed",
     when: "Day 1",
-    body: "Inbound from a Pinterest pin. First-party cookie set; behaviour logged.",
+    body: "Sarah arrives from an Instagram ad. First-party cookie set; behaviour logged. No login, no quiz.",
   },
   {
     n: 2,
     stage: "Learned",
     when: "Days 3–7",
-    body: "Pattern across 3 sessions: rattan, warm neutrals, an abandoned Sahara armchair.",
+    body: "Across 3 sessions on the site: she lingers on the same pieces, filters the same way, saves a few items, abandons an armchair.",
   },
   {
     n: 3,
     stage: "Rebuilt",
     when: "Day 10",
-    body: "Storefront re-rendered server-side. Hero pulled from her cart, grid re-ranked.",
+    body: "On her 3rd return: storefront rebuilt server-side. Hero anchors to her cart. Grid re-ranks around what she engages with.",
   },
 ];
 
@@ -277,7 +277,7 @@ export default function DashboardMockup() {
                   Sahara armchair, still in your cart.
                 </div>
                 <div className="mt-2 text-[12px] text-white/85 sm:mt-3 sm:text-sm">
-                  Paired with the rattan + natural materials you've been saving.
+                  Plus more of the pieces you keep coming back to.
                 </div>
               </div>
             </div>
